@@ -1,11 +1,10 @@
 import React, {Component, PropTypes} from 'react'
-import TagCloudActions from './actions/tag-cloud.actions'
 import './tag-cloud.component.css'
 import { List, is } from 'immutable'
-import LoadingDots from './components/loading-dots.component'
-import { getTagColorScale } from './services/tag-cloud-color.service'
+import LoadingDots from './loading-dots.component'
+import { getTagColorScale } from '../services/tag-cloud-color.service'
 import { scaleLog, scaleLinear, scalePow, select as d3select } from 'd3';
-import TagCloudDrawingService from './services/tag-cloud-drawing.service'
+import TagCloudDrawingService from '../services/tag-cloud-drawing.service'
 
 class TagCloud extends Component {
   constructor(props) {
