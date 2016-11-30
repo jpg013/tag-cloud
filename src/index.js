@@ -1,16 +1,10 @@
+import './index.css'
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import App from './components/App'
-import todoApp from './reducers'
-import './index.css'
-
-let store = createStore(todoApp)
+import TagCloud from './tag-cloud.component.jsx'
+import TagGraphState$ from './state/tag-graph.state'
 
 ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
+  <TagCloud state$={TagGraphState$()} />,
   document.getElementById('root')
 );

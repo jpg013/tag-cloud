@@ -6,6 +6,10 @@
     "react-scripts": "0.6.1"
   },
   "dependencies": {
+    "ava": "^0.16.0",
+    "d3": "^4.4.0",
+    "immutable": "^3.8.1",
+    "ramda": "^0.22.1",
     "react": "^15.3.2",
     "react-dom": "^15.3.2",
     "react-redux": "^4.4.5",
